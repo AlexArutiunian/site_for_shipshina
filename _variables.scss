@@ -7,4 +7,11 @@ $black: #000000;
     @else if $point == md{
         @media (max-width: 768px){@content;}
     }
+    @else if $point == sm{
+        @media (max-width: 576px){@content;}
+    }
+    @else if $point == xs{
+        @media (max-width: 320px){@content;}
+    }
+
 }
