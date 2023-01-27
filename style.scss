@@ -1,4 +1,6 @@
-$black: #000000;
+@import 'variables';
+
+
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -20,7 +22,13 @@ body{
     display: flex;
     list-style-type: none;
     padding-left: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    @include breakpoint(lg){
+        display: none;
+    }
     &-item{
+       
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -30,7 +38,7 @@ body{
     }
 }
 .up{
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto
 }
 
