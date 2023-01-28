@@ -14,4 +14,8 @@ $black: #000000;
         @media (max-width: 320px){@content;}
     }
 
+    @else if $point == minlg{
+        @media (max-width: 993px){@content;}
+    }
+
 }

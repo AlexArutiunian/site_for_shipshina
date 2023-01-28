@@ -12,9 +12,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+     
   <div class="main-page">
+    
     <header class="header">
     <div class="up"> 
+        <div class="wrapper">
+            <input type="checkbox" id="check-menu">
+            <label for="check-menu"></label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <nav class="main-menu">
+                <a class="Home" href="#">Home</a>
+                <a class="Contacts" href="#">Contacts</a>
+                <a class="Eng" href="#">Eng</a>
+                <a class="Info" href="#">Info</a>
+               
+            </nav>
+    
+        </div>
         <nav>
           <ul class="nav">
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>  
@@ -31,22 +49,7 @@
         
     </div>
 
-    <div class="nav-bar">
-		<div class="toggle-menu">
-			<div class="line line1"></div>
-			<div class="line line2"></div>
-			<div class="line line3"></div>
-		</div>
-		<ul class="nav-list">
-			<li class="nav-list-item"><a href="" class="nav-link">Home</a></li>
-			<li class="nav-list-item"><a href="" class="nav-link">Contacts</a></li>
-			<li class="nav-list-item">
-				<a href="" class="nav-link">Language</a>
-			</li>
-			<li class="nav-list-item"><a href="" class="nav-link">Information</a></li>
-			
-		</ul>
-	</div>
+    
     </header>
   </div> 
   <div class="intro">
@@ -113,12 +116,7 @@
   <div>
     <img src="img/main_final.svg" alt="" width="100%">
   </div>
-
-<script>
-    var toggleButton = document.querySelector('.toggle-menu');
-    var navBar = document.querySelector('.nav-bar');
-    toggleButton.addEventListener('click', function () {
-	navBar.classList.toggle('toggle');});
-</script>  
+ 
+    
 </body>
 </html>
