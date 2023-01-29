@@ -10,10 +10,13 @@ $black: #000000;
         @media (min-width: 992px){@content;}
     }
     @else if $point == md_down{
-        @media (max-width: 768px){@content;}
+        @media (max-width: 769px){@content;}
     }
     @else if $point == md_up{
-        @media (min-width: 768px){@content;}
+        @media (min-width: 769px){@content;}
+    }
+    @else if $point == md{
+        @media (width: 768px){@content;}
     }
     @else if $point == sm{
         @media (max-width: 576px){@content;}
@@ -30,3 +33,4 @@ $black: #000000;
     }
 
 }
+
