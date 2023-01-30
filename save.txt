@@ -34,16 +34,21 @@
                 <a class="Info lang" key="info" href="#">Info</a>
                 <a class="Products lang" key="products" href="#">Products</a>
             </nav>
-            <a class="en translate" id="en">
-                EN   
-            </a>
-            <a class="be translate" id="be">
-                BE
-            </a>
-            <a class="ru translate" id="ru" >
-                RU<br> 
-            </a>
-        </div>
+            
+                <a class="en translate" id="en" href="#">
+                    EN   
+                </a>
+            
+                <a class="be translate" id="be" href="#">
+                    BE
+                </a>
+            
+                <a class="ru translate" id="ru" href="#">
+                    RU
+                </a>
+            
+            
+        </div> 
         
         <nav>
           <ul class="nav">
@@ -85,25 +90,20 @@
 
     <div class="intro_desktop">
         
-            <div class="collage">
+        <div class="collage">
             <img src="img/collage.svg" alt="Collage" width="500px">
             </div>
             
             <div class="text_intro">
-                <li class="text_intro-item">
-                    <p class="text_intro-desk1 lang" key="intro_desk1">
-                    Several studies have
+                <li class="text_intro-item">Several studies have
                     revealed the positive impacts of
                     probiotic microorganisms on human
-                    health and physiology.</p>
-                    <br><p class="text_intro-desk2 lang" key="intro_desk2">
+                    health and physiology.<br>
                     Since the diversity of human 
                     microbiota is influenced by factors
                     such as lifestyle and nutrition, looking 
                     for appropriate supplies to maintain the balance
-                    of gastrointestinal flora should be considered as high priority.
-                    </p>
-                </li>  
+                    of gastrointestinal flora should be considered as high priority.</li>  
             </div>
         </div>
         
@@ -115,14 +115,14 @@
     <div class="Butt_phone">
         <div> 
             <a class="info-link" href="#more-info_from-button">
-                <button class="Button lang" key="More_info">
+                <button class="Button">
                     More information
                 </button>
             </a>
         </div>
         <div>
             <a class="info-link" href="">
-                <button class="Button lang" key="View_prod">
+                <button class="Button">
                     View products
                 </button>
             </a>
@@ -130,12 +130,12 @@
     </div> 
     <div class="Butt_desk">   
             <a class="info-link" href="#more-info_from-button">
-                <button class="Button lang" key="More_info">
+                <button class="Button">
                     More information
                 </button>
             </a>
             <a class="info-link" href="">
-                <button class="Button lang" key="View_prod">
+                <button class="Button">
                     View products
                 </button>
             </a>
@@ -152,20 +152,18 @@
     
     
     <div class="desc1"><br>
-        <p class="title_desc1 lang" align="center" key="Title_desc1">Cheese in goat rennet</p> <br><br>
+        <p align="center">Cheese in goat rennet <br><br></p>
         <img src="img/rennet.svg" alt="rennet">
-        <p class="desc1_ lang" key="desc1">
-        Cheese in goat rennet is a special product, 
+        Cheese in goat rennet is a special product,
         originally from Sardinia,
         of a completely unusual appearance,
         processing and taste. Cheese in goat abomasum
         is little known outside
-        the islands of Sardinia.  </p>
+        the islands of Sardinia.  
     </div>
     <div class="desc1"><br>
-        <p class="title_desc2 lang" align="center" key="Title_desc2">Raw unsalted cow milk cheese </p><br><br>
+        <p align="center">Raw unsalted cow milk cheese <br><br></p>
         <img src="img/cows_milk.svg" alt="cows">
-        <p class="desc2 lang" key="desc2">
         Young cow's milk cheese
         is a completely raw product
         without added salt, enzymes
@@ -175,12 +173,12 @@
         substances and turns
         into cheese with the help
         of bacteria that independently
-        develop in the product itself.</p>
+        develop in the product itself.
     </div>
     <div class="desc1"><br>
-        <p class="title_desc3 lang" key="Title_desc3" align="center">Nomad cheese</p><br><br>
+        <p align="center">Nomad cheese<br><br></p>
         <img src="img/nomad.svg" alt="nomad">
-        <p class="desc3 lang" key="desc3">
+        
         For the production of Motal
         cheese, curd prepared by
         natural souring, is densely
@@ -192,7 +190,7 @@
         tradition of the nomads of Iran,
         the goat skin with cheese will
         be buried in the ground for
-        6 months or for a year.  </p>
+        6 months or for a year.  
     </div>
   
   <div>

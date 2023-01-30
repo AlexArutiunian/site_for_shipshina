@@ -4,7 +4,7 @@
     margin-bottom: 5%;
 }    
 
-.desc1 p{
+.desc1 .title_desc1, .title_desc2, .title_desc3{
     font-weight: bold;     
 }
 
@@ -12,3 +12,11 @@
     max-width: 100%;
 }
 
+.en, .be, .ru{
+    display: inline-block;
+    transform: translateX(100px);
+    margin-top: 8%;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
