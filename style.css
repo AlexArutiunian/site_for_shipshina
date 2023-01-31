@@ -20,13 +20,15 @@
     padding: 3px;
     cursor: pointer;
 }
-
+.desc_desktop .picture .rennet{
+    max-width: 10%;
+}
 @media (min-width: 769px) {
     .desc_desktop .picture {
+        
         margin-top:0%;
         margin-left: 55%;
-        margin-right: 5%;
-        
+        margin-right: 5%;  
     }
 }
 
@@ -63,10 +65,25 @@
     list-style-type: none;
     font-size: 21px;
     }
+    .desc_text.rennet {
+        margin-top: -32%;
+        margin-left: 10%;
+        margin-right: 50%;
+        margin-bottom: 25%;
+        text-decoration: 0;
+        list-style-type: none;
+        font-size: 21px;
+    }
+    .picture.rennet img {
+        max-width: 50%;
+        margin-bottom: 10%;
+    }
+    
     .picture img {
     max-width: 100%;
     margin-bottom: 10%;
     }
+    
 
     .title_desc1{
     margin-top: 10%;
@@ -109,3 +126,4 @@
         }
     
     }
+   
