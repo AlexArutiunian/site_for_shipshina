@@ -127,3 +127,58 @@
     
     }
    
+.Logo.cont{
+    margin-left: 15%;
+}    
+
+.link_social{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 769px) {
+    .inst_pct{
+        max-width: 50%;
+        margin-left: 10%;
+    }
+    .link_social p{ 
+        text-decoration: none;
+        margin-left: 10%;
+    }
+    .Pre-order{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}  
+
+@media (min-width: 769px) {
+    .inst_pct{
+        max-width: 50%;
+        margin-left: 5%;
+    }
+    .link_social p{ 
+        text-decoration: none;
+        margin-left: 5%;
+    }
+    .Pre-order{
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+} 
+
+.abomasum{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ren1{
+    margin-left: 15%;
+    border-radius: 20px;
+    border: 5px solid darkred;
+    max-width: 100%;
+}
+.abomasum h1{
+    font-size: 21px;
+}
