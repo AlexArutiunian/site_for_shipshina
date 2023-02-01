@@ -168,17 +168,107 @@ a{
     }
 } 
 
-.abomasum{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+@media (min-width: 769px){
+    .cheese.phone{
+        display: none;
+    }
+    .cheese.desk{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .cheese.desk .pct1,
+    .cheese.desk .pct3{
+        max-width: 30%;
+        margin-left: 5%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 5px solid gray;
+    }
+    .cheese.rennet.desk .pct4{
+        max-width: 25%;
+        margin-left: 5%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 5px solid gray;
+    }
+    .cheese.rennet.desk .pct2{
+        max-width: 35%;
+        margin-left: 5%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 5px solid gray;
+    }
+    .cheese.cows.desk .pct2{
+        max-width: 30%;
+        margin-left: 5%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 5px solid gray;
+    }
+    .cheese.cows.desk .pct4{
+        max-width: 35%;
+        margin-left: 5%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 5px solid gray;
+    }
+    .cheese.nomad.desk .pct1{
+        max-width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 20px;
+        border: 5px solid gray;
+    }
+    .cheese h1{
+        text-align: center;
+    }
 
-.ren1{
-    margin-left: 15%;
-    border-radius: 20px;
-    border: 5px solid darkred;
-    max-width: 100%;
+}    
+
+@media (max-width: 769px){
+    .cheese.desk{
+        display: none;
+    }
+    .cheese.phone{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .pct1{
+        margin-left: 5%;
+        border-radius: 20px;
+        border: 5px solid gray;
+        max-width: 90%;
+    }
+    .cheese h1{
+        font-size: 21px;
+    }
+
+    .pct2, .pct3, .pct4{
+
+        margin-left: 5%;
+        margin-right: 10%;
+        border-radius: 20px;
+        border: 5px solid gray;
+        max-width: 90%;
+    }
+
+    .Button.order{
+        margin-left: 15%;
+        margin-right: 25%;
+       
+    }
+
+    .cheese h1{
+        text-align: center;
+    }
+
 }
-.abomasum h1{
-    font-size: 21px;
+.Logo, .main_final{
+    border-radius: 5px;
+    border: none;
+}
+img{
+    border-radius: 20px;
+    border: 5px solid gray;
 }
