@@ -146,19 +146,21 @@ body {
 }
 
 @media (min-width: 769px) {
-  .text_intro {
-    margin-top: -25%;
-    margin-left: 10%;
-    margin-right: 40%;
-    -webkit-text-decoration: 0;
-            text-decoration: 0;
-    list-style-type: none;
-    font-size: 21px;
+  @media (max-width: 1024px) {
+    .text_intro {
+      margin-top: -25%;
+      margin-left: 10%;
+      margin-right: 40%;
+      -webkit-text-decoration: 0;
+              text-decoration: 0;
+      list-style-type: none;
+      font-size: 21px;
+    }
   }
-}
-@media (max-width: 769px) {
-  .text_intro {
-    display: none;
+  @media (max-width: 769px) {
+    .text_intro {
+      display: none;
+    }
   }
 }
 
