@@ -5,7 +5,8 @@
 }    
 
 .desc1 .title_desc1, .title_desc2, .title_desc3{
-    font-weight: bold;     
+    font-weight: bold; 
+    color:rgb(94, 23, 73)    
 }
 
 .desc1 img{
@@ -499,6 +500,10 @@ body {
     .Butt_phone {
       display: none;
     }
+    .Butt_desk{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
   }
   
   @media (max-width: 992px) {
@@ -527,11 +532,17 @@ body {
     .desc_phone .desc_text1{
         margin-left: 10%;
         margin-right: 10%;
-        font-size: 21px;
+        
+        
     }
     .desc_phone .title_desc1{
         font-size: 25px;
         font-weight: bold;
+        color:rgb(94, 23, 73)
+    }
+    .desc_phone .desc_text2_r button{
+        margin-left: 10%;
+        margin-right: 10%;  
     }
     
     .desc_phone .desc_text2 button{
@@ -570,6 +581,8 @@ body {
     .title_desc1{
         font-size: 30px;
         font-weight: bold;
+        color:rgb(94, 23, 73)
+
     }
     @media (min-width: 769px){
         
@@ -622,6 +635,7 @@ body {
     .MAIN_DESC1 .title_desc1{
         font-size: 30px;
         font-weight: bold;
+        color:rgb(94, 23, 73)
     }
     
     .MAIN_DESC2 .picture_r{
@@ -636,6 +650,7 @@ body {
     .MAIN_DESC2 .title_desc1{
         font-size: 30px;
         font-weight: bold;
+        color:rgb(94, 23, 73)
     }
 
     .desc_phone{
@@ -661,4 +676,10 @@ body {
 } 
  
 
- 
+:root {
+    scroll-behavior: smooth;
+}
+
+.rennet_title, .nomad_title, .cows_title{
+    color:rgb(94, 23, 73)
+}
