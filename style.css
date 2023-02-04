@@ -689,3 +689,106 @@ body {
 .rennet_title, .nomad_title, .cows_title{
     color:rgb(94, 23, 73)
 }
+
+@media (max-width: 769px){
+  .main_down{
+    position: relative;
+  }
+  
+  .main_down .social{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    
+  }
+  .main_down .inst_down{
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  }
+  .main_down .tg_down{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+  .main_down .prod_down{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    
+  }
+  .main_down .ren_down{
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  }
+  .main_down .cows_down{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  }
+  .main_down .nomad_down{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    }
+  
+  .main_down .logo_down{
+    position: absolute;
+    max-width: 10%;
+    top: 80%;
+    left: 80%;
+    }
+}
+
+@media (min-width: 769px){
+  .main_down{
+    position: relative;
+}
+
+.main_down .social{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    
+}
+.main_down .inst_down{
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+.main_down .tg_down{
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+.main_down .prod_down{
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  
+}
+.main_down .ren_down{
+position: absolute;
+top: 65%;
+left: 25%;
+}
+.main_down .cows_down{
+position: absolute;
+top: 70%;
+left: 25%;
+}
+.main_down .nomad_down{
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  }
+
+.main_down .logo_down{
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  }
+}  
+
