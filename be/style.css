@@ -4,9 +4,12 @@
   margin-bottom: 5%;
 }    
 
+
+
 .desc1 .title_desc1, .title_desc2, .title_desc3{
   font-weight: bold; 
-  color:rgb(94, 23, 73)    
+  color:rgb(94, 23, 73)  
+    
 }
 
 .desc1 img{
@@ -545,6 +548,8 @@ input {
       font-size: 21px;
       font-weight: bold;
       color:rgb(94, 23, 73);
+      margin-left: 5%;
+      margin-right: 5%;
   }
   .desc_phone .desc_text2_r button{
      

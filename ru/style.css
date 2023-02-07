@@ -562,6 +562,7 @@ input {
   
 }
 button{
+  letter-spacing: 0px;
   font-weight: bold;
   color:rgb(94, 23, 73);
 }
