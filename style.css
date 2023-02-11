@@ -840,3 +840,9 @@ left: 60%;
   text-decoration: none;
   color:rgb(94, 23, 73);
 }
+
+.Button.ren a, .Button.nomad a, .Button.cows a{
+  text-decoration: none;
+  color:rgb(94, 23, 73);
+}
+
