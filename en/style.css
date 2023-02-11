@@ -834,3 +834,7 @@ left: 60%;
 }
 }  
 
+.Button.home a{
+  text-decoration: none;
+  color:rgb(94, 23, 73);
+}
