@@ -513,8 +513,8 @@ input {
     display: none;
   }
   .Butt_desk{
-      margin-left: 30%;
-      margin-right: 30%;
+      margin-left: 0%;
+      margin-right: 0%;
       
   }
 }
@@ -585,6 +585,25 @@ button{
   .desc_phone{
       display: none;
   }
+  .desc_desktop.right_pct{
+    margin-left: 5%;
+  }
+
+  .picture.nomad{
+    
+    margin-left: 0%;
+  }
+  
+  @media (min-width: 1500px){
+    .desc_desktop.right_pct{
+      margin-left: 20%;
+    }
+  }
+  .desc_desktop{
+    margin-left: 20%;
+  }
+
+  
   
   .picture_r{
       max-width: 100%;
@@ -593,7 +612,7 @@ button{
   }
 
   .desc_text1.reverse{
-      margin-left: 15%;
+      
       font-size: 25px;
   }
 
@@ -604,10 +623,11 @@ button{
   }
   .desc_text1{
       margin-right: 15%;
-      margin-left: 40%;
+      
       font-size: 25px;
   }
   .title_desc1{
+      
       font-size: 30px;
       font-weight: bold;
       color:rgb(94, 23, 73)
@@ -626,10 +646,11 @@ button{
   @media (max-width: 1100px){
       .MAIN_DESC2 .desc_desktop button{
           margin-left: 30%;
-          font-size: 20px;
+          font-size: 12px;
+          margin-bottom: 5%;
       }
       .desc_text2 button{
-          font-size: 20px;
+          font-size: 12px;
       }
       
       
@@ -652,9 +673,9 @@ button{
   }
   @media (min-width: 1500px){
   .MAIN_DESC1 .picture{
-      max-width: 10%;
+      max-width: 20%;
       padding-right: 30px;
-      margin-left: 30%;
+      margin-left: 0%;
   }
   .MAIN_DESC1 .desc_text1{
       margin-right: 30%;
@@ -668,18 +689,19 @@ button{
   }
   
   .MAIN_DESC2 .picture_r{
-      max-width: 10%;
+      max-width: 20%;
       padding-left: 30px;
       margin-right: 30%;
   }
   .MAIN_DESC2 .desc_text1{
-      margin-left: 30%;
+      margin-left: 0%;
       font-size: 25px;
   }
   .MAIN_DESC2 .title_desc1{
       font-size: 30px;
       font-weight: bold;
       color:rgb(94, 23, 73);
+      
       
   }
 
@@ -833,6 +855,13 @@ left: 25%;
 position: absolute;
 top: 60%;
 left: 60%;
+}
+@media (min-width: 1100px){
+  .main_down .logo_down{
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    }
 }
 }  
 
