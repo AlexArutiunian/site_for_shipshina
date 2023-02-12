@@ -874,3 +874,7 @@ left: 60%;
   text-decoration: none;
   color:rgb(94, 23, 73);
 }
+
+.main_final{
+  max-width: 100%;
+}
