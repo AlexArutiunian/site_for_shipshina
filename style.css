@@ -498,7 +498,7 @@ input {
   outline: none;
   transition: 0.2s;
   margin-top: 20px;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-right: -5%;
 }
 
@@ -629,6 +629,11 @@ button{
       
       font-size: 25px;
   }
+  .desc_text1.abomas{
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 25px;
+}
   .title_desc1{
       
       font-size: 30px;

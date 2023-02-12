@@ -172,6 +172,9 @@ a{
   border-radius: 5px;
   border: none;
 }
+.main_final{
+  max-width: 100%;
+}
 
 
 @media (min-width: 769px){
@@ -495,7 +498,7 @@ input {
   outline: none;
   transition: 0.2s;
   margin-top: 20px;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-right: -5%;
 }
 
@@ -626,6 +629,11 @@ button{
       
       font-size: 25px;
   }
+  .desc_text1.abomas{
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 25px;
+}
   .title_desc1{
       
       font-size: 30px;
@@ -823,6 +831,7 @@ position: absolute;
 top: 65%;
 left: 10%;
 }
+
 .main_down .tg_down{
 position: absolute;
 top: 70%;
@@ -875,6 +884,3 @@ left: 60%;
   color:rgb(94, 23, 73);
 }
 
-.main_final{
-  max-width: 100%;
-}
