@@ -622,6 +622,7 @@ button{
   }
 
   .picture{
+      float: left;
       max-width: 100%;
       padding-right: 30px;
       margin-left: 15%;
