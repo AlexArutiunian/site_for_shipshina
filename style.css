@@ -552,11 +552,13 @@ input {
       
   }
   .desc_phone .title_desc1{
+      
       font-size: 21px;
       font-weight: bold;
       color:rgb(94, 23, 73);
       margin-left: 10%;
       margin-right: 10%;
+      text-align: center;
   }
   .desc_phone .desc_text2_r button{
      
