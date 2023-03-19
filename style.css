@@ -481,8 +481,8 @@ input {
   outline: none;
   transition: 0.2s;
   margin-top: 20px;
-  margin-left: 30%;
-  margin-right: 5%; 
+  margin-left: 10%;
+  margin-right: 10%; 
 }
 .Button {
   width: 200px;
@@ -887,6 +887,3 @@ left: 60%;
   color:rgb(94, 23, 73);
 }
 
-.Button.cows.phone{
-  float: center;
-}
