@@ -609,6 +609,8 @@ button{
   
   
   .picture_r{
+
+      float: right;
       max-width: 100%;
       margin-right: 15%;
       padding-left: 30px;
