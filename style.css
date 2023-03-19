@@ -638,7 +638,7 @@ button{
     font-size: 25px;
 }
   .title_desc1{
-      
+      float: center;
       font-size: 30px;
       font-weight: bold;
       color:rgb(94, 23, 73)
