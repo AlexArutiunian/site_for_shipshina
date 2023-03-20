@@ -452,7 +452,7 @@ input {
 }   
 
 .MAIN_DESC1 .Button{
-  width: 300px;
+  width: 280px;
   height: 40px;
   cursor: pointer;
   border: none;
@@ -465,11 +465,11 @@ input {
   transition: 0.2s;
   margin-top: 20px;
   margin-left: 10%;
-  margin-right: -5%; 
+  margin-right: 0%; 
 }
 
 .MAIN_DESC2 .Button{
-  width: 300px;
+  width: 280px;
   height: 40px;
   cursor: pointer;
   border: none;
@@ -498,8 +498,8 @@ input {
   outline: none;
   transition: 0.2s;
   margin-top: 20px;
-  margin-left: 20%;
-  margin-right: -5%;
+  margin-left: 10%;
+  margin-right: 0%;
 }
 
 .Button:active {
