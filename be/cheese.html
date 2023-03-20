@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="be"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
@@ -20,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
@@ -28,7 +29,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-   
 </head>
 <body>
     <header class="header">
@@ -41,32 +41,32 @@
                 <div class="burger-line third"></div>
                 <div class="burger-line fourth"></div>
                 <nav class="main-menu">
-                    <a class="Home lang" key="home" href="index.html">Галоўная</a>
-                    <a class="Contacts lang" key="contacts" href="contacts.html">Кантакт</a>
-                    <a class="Products lang" key="products" href="cheese.html">Прадукцыя</a>
+                    <a class="Home lang" title="home" href="index.html">Галоўная</a>
+                    <a class="Contacts lang" title="contacts" href="contacts.html">Кантакт</a>
+                    <a class="Products lang" title="products" href="cheese.html">Прадукцыя</a>
                 </nav>
-                <a class="en translate" href="../en/cheese.html">
+                <a class="en translate" id="en" href="../en/contacts.html">
                     EN   
                 </a>
-                <a class="be translate" href="../be/cheese.html">
+                <a class="be translate" id="be" href="../be/contacts.html">
                     BE
                 </a>
-                <a class="ru translate" href="../ru/cheese.html">
+                <a class="ru translate" id="ru" href="../ru/contacts.html">
                     RU<br> 
-                </a>  
+                </a> 
             </div>
             
             <nav>
               <ul class="nav">
-                <li class="nav-item"><a class="nav-link lang" href="contacts.html" key="cont_curr_lang">Кантакт</a></li>  
+                <li class="nav-item"><a class="nav-link lang" href="contacts.html" title="cont_curr_lang">Кантакт</a></li>  
               </ul>
             </nav>
     
-            <img class="Logo" src="img/Logo.png" alt="Logo">
+            <img class="Logo" src="../img/logo2.webp" alt="Logo">
     
             <nav>
               <ul class="nav">          
-                <li class="nav-item"><a class="nav-link lang" href="#" key="Curr_lang">Бел</a></li>
+                <li class="nav-item"><a class="nav-link lang" href="#" title="Curr_lang">Бел</a></li>
               </ul>
             </nav>
             
@@ -76,27 +76,28 @@
         </header>
         <div class="cheese rennet desk">
             <a id="about_rennet">
-                <h1 class="rennet_title lang" key="rennet_title">Сыр у казіным сычузе</h1>
+                <h1 class="rennet_title lang" title="rennet_title">Сыр у казіным сычузе</h1>
             </a>
            
-            <img class="pct3" src="img/rennet3.JPG" alt="">
-            <img class="pct1" src="img/rennet1.JPG" alt="r1" border="1">
+            <img class="pct3 ren" src="../img/rennet3.webp" alt="">
+            <img class="pct1" src="../img/rennet1.webp" alt="r1">
            
             <br><br>
-            <p class="desc lang" key="desc_ren1">Сыр у казіным сычузе малавядомы за межамі вострава Сардзінія. Вонкава ён выглядае як мяшок, зроблены з матэрыялу незразумелага паходжання, мяккага і тоўстага. Пры пальпацыі мае такую   ўжо кансістэнцыю, як мяккая, абвіслыя грудзі васьмідзесяцігадовага чалавека.«Вось і чарговая смярдзючая і чарвівая хрэнь!»    (Ды я проста цытую цябе, прыдзірлівы і прадузяты чытач.)</p>
-            <p class="desc lang" key="desc_ren2">Зусім не. Сыр у казіным сычузе не пахне гнілым сырам і не ўтрымоўвае чарвякоў, ён павее нядзельнай раніцай і ўтрымоўвае страўнікавы сок.</p>
+            <p class="desc lang" title="desc_ren1">Сыр у казіным сычузе малавядомы за межамі вострава Сардзінія. Вонкава ён выглядае як мяшок, зроблены з матэрыялу незразумелага паходжання, мяккага і тоўстага. Пры пальпацыі мае такую   ўжо кансістэнцыю, як мяккая, абвіслыя грудзі васьмідзесяцігадовага чалавека.«Вось і чарговая смярдзючая і чарвівая хрэнь!»    (Ды я проста цытую цябе, прыдзірлівы і прадузяты чытач.)</p>
+            <p class="desc lang" title="desc_ren2">Зусім не. Сыр у казіным сычузе не пахне гнілым сырам і не ўтрымоўвае чарвякоў, ён павее нядзельнай раніцай і ўтрымоўвае страўнікавы сок.</p>
             
-            <p class="desc lang" key="desc_ren3">Сыр у казіным сычузе звычайна падаюць у канцы трапезы. Маючы рн, блізкі да 0,2, лічыцца сапраўдным дыжэстывам. Яго смак не паддаецца апісанню: рэцэптары, датыкаючыся з ім, страйкуюць і адмаўляюцца пасылаць сігналы ў мозг. Смак, якi захоўваецца праз некалькі гадзін, нагадвае адценні трэскі і заварнога крэму з нюансамі мушкатовага арэха і пірага з опоссумом. Усё такое пікантнае, што шкала Скавіла схавалася б ад сораму</p>
+            <p class="desc lang" title="desc_ren3">Сыр у казіным сычузе звычайна падаюць у канцы трапезы. Маючы рн, блізкі да 0,2, лічыцца сапраўдным дыжэстывам. Яго смак не паддаецца апісанню: рэцэптары, датыкаючыся з ім, страйкуюць і адмаўляюцца пасылаць сігналы ў мозг. Смак, якi захоўваецца праз некалькі гадзін, нагадвае адценні трэскі і заварнога крэму з нюансамі мушкатовага арэха і пірага з опоссумом. Усё такое пікантнае, што шкала Скавіла схавалася б ад сораму</p>
             <br><br>
-            <img class="pct2" src="img/rennet2.JPG" alt="">
-            <img class="pct4" src="img/rennet4.JPG" alt="">
+            <img class="pct2" src="../img/rennet2.webp" alt="">
+            <img class="pct4" src="../img/rennet4.webp" alt="">
             <br><br>
-            <p class="desc lang" key="desc_ren4">Казу дэ крабіту кладуць на апрацоўчую дошку і выкрываюць хірургічным шляхам, робячы падоўжны разрэз востраканцовым нажом. Вяршкi ўсярэдзіне нашмароўваюць на хлеб карасау, пістаку або пальцы. Зусім бескарысна змешваць яго ці камбінаваць з іншымі прадуктамі, бо яго выяўлены і рэзкі густ душыць нават труфелі, апырсканыя газай. </p>
+            <p class="desc lang" title="desc_ren4">Казу дэ крабіту кладуць на апрацоўчую дошку і выкрываюць хірургічным шляхам, робячы падоўжны разрэз востраканцовым нажом. Вяршкi ўсярэдзіне нашмароўваюць на хлеб карасау, пістаку або пальцы. Зусім бескарысна змешваць яго ці камбінаваць з іншымі прадуктамі, бо яго выяўлены і рэзкі густ душыць нават труфелі, апырсканыя газай. </p>
          
-            <p class="desc lang" key="desc_ren5"> Хутчэй за ўсё вам таксама давядзецца выпіць следам некалькі шклянак добрага віна. Калі ў вас ёсць абардэнце ці грапа з высокім утрыманнем алкаголю, гэта яшчэ лепш.    Пажадана не садзіцца за руль пасля ежы. Таксама пажадана легчы спаць.</p>
-            <button class="Button order ren">
-                <a href="contacts.html" class="lang" key="order">ПАПЯРЭДНЯЯ ЗАМОВА</a>
-            </button>
+            <p class="desc lang" title="desc_ren5"> Хутчэй за ўсё вам таксама давядзецца выпіць следам некалькі шклянак добрага віна. Калі ў вас ёсць абардэнце ці грапа з высокім утрыманнем алкаголю, гэта яшчэ лепш.    Пажадана не садзіцца за руль пасля ежы. Таксама пажадана легчы спаць.</p>
+            <form style="display: inline" action="contacts.html" method="get">
+                <button class="Button order ren lang" title="order">ПАПЯРЭДНЯЯ ЗАМОВА</button>
+            </form>
+            
             <br><br>
         </div>
 
@@ -104,72 +105,75 @@
 
         <div class="cheese cows desk">
             <a id="about_cows">
-                <h1 class="cows_title lang" key="cows_title">Сыры несалёны сыр з каровiнага малака</h1>
+                <h1 class="cows_title lang" title="cows_title">Сыры несалёны сыр з каровiнага малака</h1>
             </a>
             
-            <img class="pct3" src="img/cows1.JPG" alt="">
-            <img class="pct2" src="img/cows_1.JPG" alt="">
+            <img class="pct3" src="../img/cows1.webp" alt="">
+            <img class="pct2" src="../img/cows_1.webp" alt="">
            
             <br><br>
-            <p class="desc lang" key="desc_cows1">Малады сыр з каравiнага малака - гэта цалкам сырой прадукт без дадання солі, ферментаў і без нагрэву. Склад: 100% малако, якое захоўвае ў сабе максімум карысных рэчываў і ператвараецца ў сыр з бактэрыямі, якія самастойна у iм развіваюцца.</p>
-            <p class="desc lang" key="desc_cows2">Счытаецца, што малако, нагрэтае вышэй за 39'С, губляе вялікую частку сваіх карысных уласцівасцяў.    Нагрэвая, сыравары атрымліваюць пэўную кансістэнцыю і смак, але не карысць. Карысцi ў пастэрызаваных сырах няма. </p>
+            <p class="desc lang" title="desc_cows1">Малады сыр з каравiнага малака - гэта цалкам сырой прадукт без дадання солі, ферментаў і без нагрэву. Склад: 100% малако, якое захоўвае ў сабе максімум карысных рэчываў і ператвараецца ў сыр з бактэрыямі, якія самастойна у iм развіваюцца.</p>
+            <p class="desc lang" title="desc_cows2">Счытаецца, што малако, нагрэтае вышэй за 39'С, губляе вялікую частку сваіх карысных уласцівасцяў.    Нагрэвая, сыравары атрымліваюць пэўную кансістэнцыю і смак, але не карысць. Карысцi ў пастэрызаваных сырах няма. </p>
             <br><br>
-            <img class="pct1" src="img/cows2.JPG" alt="r1" border="1">
-            <img class="pct4" src="img/cows4.JPG" alt="">
+            <img class="pct1" src="../img/cows2.webp" alt="r1">
+            <img class="pct4" src="../img/cows4.webp" alt="">
             <br><br>
           
-            <p class="desc lang" key="desc_cows3">Гатаваць сырой сыр значна дольш і працэс патрабуе велізарнай увагі і працы. Сучасная бізнес-стратэгія стварання прадуктаў гэтага не прымае. Усё робіцца хутка і максімальна эфектыўна, што не заўсёды азначае якасна.</p>
+            <p class="desc lang" title="desc_cows3">Гатаваць сырой сыр значна дольш і працэс патрабуе велізарнай увагі і працы. Сучасная бізнес-стратэгія стварання прадуктаў гэтага не прымае. Усё робіцца хутка і максімальна эфектыўна, што не заўсёды азначае якасна.</p>
             
-            <p class="desc lang" key="desc_cows4">Малады несалёны сыр з каравiнага малака, будучы маладым, (ад пары дзён да пары недзель), з'яўляецца выдатнай крыніцай мінералаў, яго добра есцi з медам.    Калі такі сыр вытрымаць і высушыць пару месяцаў, то ён дзейнічае як губка і выпівае шкодныя рэчывы і таксіны ў кішачніку. Яго можна есцi невялікімі кавалачкамi на працягу дня.    А смак яго непауторны!</p>
-            <button class="Button order cows">
-                <a class="lang" href="contacts.html" key="order">ПАПЯРЭДНЯЯ ЗАМОВА</a>
-            </button>
+            <p class="desc lang" title="desc_cows4">Малады несалёны сыр з каравiнага малака, будучы маладым, (ад пары дзён да пары недзель), з'яўляецца выдатнай крыніцай мінералаў, яго добра есцi з медам.    Калі такі сыр вытрымаць і высушыць пару месяцаў, то ён дзейнічае як губка і выпівае шкодныя рэчывы і таксіны ў кішачніку. Яго можна есцi невялікімі кавалачкамi на працягу дня.    А смак яго непауторны!</p>
+            <form style="display: inline" action="contacts.html" method="get">
+                <button class="Button order cows lang" title="order">ПАПЯРЭДНЯЯ ЗАМОВА</button>
+            </form>
+           
             <br><br>
         </div>
 
 
         <div class="cheese nomad desk">
             <a id="about_nomad">
-                <h1 class="nomad_title lang" key="nomad_title">Сыр качэўнікаў</h1>
+                <h1 class="nomad_title lang" title="nomad_title">Сыр качэўнікаў</h1>
             </a>
             
-            <img class="pct3" src="img/nomad1.JPG" alt="">
-            <img class="pct1" src="img/nomad2.jpg" alt="r1" border="1">
+            <img class="pct3" src="../img/nomad1.webp" alt="">
+            <img class="pct1" src="../img/nomad2.webp" alt="r1">
            
             <br><br>
-            <p class="desc lang" key="desc_nomad1">Для вытворчасці сыра матаў папярэдне прыгатаваным шляхам натуральнага скісання тварагом шчыльна набіваецца праз шыю вычышчаная казіная шкура.</p> 
-            <p class="desc lang" key="desc_nomad2"> Адтуліна корпуса зачыняецца ваўнянай тасьмой. Затым кажух з казінай шкуры старадаўняй традыцыі качэўнікаў Ірана будзе закапаны ў зямлю на 6 месяцаў ці на год.</p>
-            <button class="Button order nomad">
-                <a class="lang" key="order" href="contacts.html">ПАПЯРЭДНЯЯ ЗАМОВА</a>
-            </button>
+            <p class="desc lang" title="desc_nomad1">Для вытворчасці сыра матаў папярэдне прыгатаваным шляхам натуральнага скісання тварагом шчыльна набіваецца праз шыю вычышчаная казіная шкура.</p> 
+            <p class="desc lang" title="desc_nomad2"> Адтуліна корпуса зачыняецца ваўнянай тасьмой. Затым кажух з казінай шкуры старадаўняй традыцыі качэўнікаў Ірана будзе закапаны ў зямлю на 6 месяцаў ці на год.</p>
+            <form style="display: inline" action="contacts.html" method="get">
+                <button class="Button order nomad lang" title="order">ПАПЯРЭДНЯЯ ЗАМОВА</button>
+            </form>
+            
             <br><br>
         </div>
         <div class="cheese rennet phone">
             <a id="about_rennet_ph">
-                <h1 class="rennet_title lang" key="rennet_title">Сыр у казіным сычузе</h1>
+                <h1 class="rennet_title lang" title="rennet_title">Сыр у казіным сычузе</h1>
             </a>
             
-            <img class="pct3" src="img/rennet3.JPG" alt="">
+            <img class="pct3" src="../img/rennet3.webp" alt="">
             
            
             <br><br>
-            <p class="desc lang" key="desc_ren1">Сыр у казіным сычузе малавядомы за межамі вострава Сардзінія. Вонкава ён выглядае як мяшок, зроблены з матэрыялу незразумелага паходжання, мяккага і тоўстага. Пры пальпацыі мае такую   ўжо кансістэнцыю, як мяккая, абвіслыя грудзі васьмідзесяцігадовага чалавека.«Вось і чарговая смярдзючая і чарвівая хрэнь!»    (Ды я проста цытую цябе, прыдзірлівы і прадузяты чытач.)</p>
-            <p class="desc lang" key="desc_ren2">Зусім не. Сыр у казіным сычузе не пахне гнілым сырам і не ўтрымоўвае чарвякоў, ён павее нядзельнай раніцай і ўтрымоўвае страўнікавы сок.</p>
+            <p class="desc lang" title="desc_ren1">Сыр у казіным сычузе малавядомы за межамі вострава Сардзінія. Вонкава ён выглядае як мяшок, зроблены з матэрыялу незразумелага паходжання, мяккага і тоўстага. Пры пальпацыі мае такую   ўжо кансістэнцыю, як мяккая, абвіслыя грудзі васьмідзесяцігадовага чалавека.«Вось і чарговая смярдзючая і чарвівая хрэнь!»    (Ды я проста цытую цябе, прыдзірлівы і прадузяты чытач.)</p>
+            <p class="desc lang" title="desc_ren2">Зусім не. Сыр у казіным сычузе не пахне гнілым сырам і не ўтрымоўвае чарвякоў, ён павее нядзельнай раніцай і ўтрымоўвае страўнікавы сок.</p>
             <br>
-            <img class="pct1" src="img/rennet1.JPG" alt="r1" border="1">
+            <img class="pct1" src="../img/rennet1.webp" alt="r1">
             <br><br>
-            <p class="desc lang" key="desc_ren3">Сыр у казіным сычузе звычайна падаюць у канцы трапезы. Маючы рн, блізкі да 0,2, лічыцца сапраўдным дыжэстывам. Яго смак не паддаецца апісанню: рэцэптары, датыкаючыся з ім, страйкуюць і адмаўляюцца пасылаць сігналы ў мозг. Смак, якi захоўваецца праз некалькі гадзін, нагадвае адценні трэскі і заварнога крэму з нюансамі мушкатовага арэха і пірага з опоссумом. Усё такое пікантнае, што шкала Скавіла схавалася б ад сораму</p>
+            <p class="desc lang" title="desc_ren3">Сыр у казіным сычузе звычайна падаюць у канцы трапезы. Маючы рн, блізкі да 0,2, лічыцца сапраўдным дыжэстывам. Яго смак не паддаецца апісанню: рэцэптары, датыкаючыся з ім, страйкуюць і адмаўляюцца пасылаць сігналы ў мозг. Смак, якi захоўваецца праз некалькі гадзін, нагадвае адценні трэскі і заварнога крэму з нюансамі мушкатовага арэха і пірага з опоссумом. Усё такое пікантнае, што шкала Скавіла схавалася б ад сораму</p>
             <br><br>
-            <img class="pct2" src="img/rennet2.JPG" alt="">
+            <img class="pct2" src="../img/rennet2.webp" alt="">
             <br><br>
-            <p class="desc lang" key="desc_ren4">Казу дэ крабіту кладуць на апрацоўчую дошку і выкрываюць хірургічным шляхам, робячы падоўжны разрэз востраканцовым нажом. Вяршкi ўсярэдзіне нашмароўваюць на хлеб карасау, пістаку або пальцы. Зусім бескарысна змешваць яго ці камбінаваць з іншымі прадуктамі, бо яго выяўлены і рэзкі густ душыць нават труфелі, апырсканыя газай. </p>
+            <p class="desc lang" title="desc_ren4">Казу дэ крабіту кладуць на апрацоўчую дошку і выкрываюць хірургічным шляхам, робячы падоўжны разрэз востраканцовым нажом. Вяршкi ўсярэдзіне нашмароўваюць на хлеб карасау, пістаку або пальцы. Зусім бескарысна змешваць яго ці камбінаваць з іншымі прадуктамі, бо яго выяўлены і рэзкі густ душыць нават труфелі, апырсканыя газай. </p>
             <br><br>
-            <img class="pct4" src="img/rennet4.JPG" alt="">
+            <img class="pct4" src="../img/rennet4.webp" alt="">
             <br><br>
-            <p class="desc lang" key="desc_ren5"> Хутчэй за ўсё вам таксама давядзецца выпіць следам некалькі шклянак добрага віна. Калі ў вас ёсць абардэнце ці грапа з высокім утрыманнем алкаголю, гэта яшчэ лепш.    Пажадана не садзіцца за руль пасля ежы. Таксама пажадана легчы спаць.</p>
-            <button class="Button order">
-                <a href="contacts.html" class="lang" key="order">ПАПЯРЭДНЯЯ ЗАМОВА</a>
-            </button>
+            <p class="desc lang" title="desc_ren5"> Хутчэй за ўсё вам таксама давядзецца выпіць следам некалькі шклянак добрага віна. Калі ў вас ёсць абардэнце ці грапа з высокім утрыманнем алкаголю, гэта яшчэ лепш.    Пажадана не садзіцца за руль пасля ежы. Таксама пажадана легчы спаць.</p>
+            <form style="display: inline" action="contacts.html" method="get">
+                <button class="Button order lang" title="order">ПАПЯРЭДНЯЯ ЗАМОВА</button>
+            </form>
+            
             <br><br>
         </div>
 
@@ -177,30 +181,31 @@
 
         <div class="cheese cows phone">
             <a id="about_cows_ph">
-                <h1 class="cows_title lang" key="cows_title">Сыры несалёны сыр з каровiнага малака</h1>
+                <h1 class="cows_title lang" title="cows_title">Сыры несалёны сыр з каровiнага малака</h1>
             </a>
             
-            <img class="pct3" src="img/cows4.JPG" alt="">
+            <img class="pct3" src="../img/cows4.webp" alt="">
             
            
             <br><br>
-            <p class="desc lang" key="desc_cows1">Малады сыр з каравiнага малака - гэта цалкам сырой прадукт без дадання солі, ферментаў і без нагрэву. Склад: 100% малако, якое захоўвае ў сабе максімум карысных рэчываў і ператвараецца ў сыр з бактэрыямі, якія самастойна у iм развіваюцца.</p>
+            <p class="desc lang" title="desc_cows1">Малады сыр з каравiнага малака - гэта цалкам сырой прадукт без дадання солі, ферментаў і без нагрэву. Склад: 100% малако, якое захоўвае ў сабе максімум карысных рэчываў і ператвараецца ў сыр з бактэрыямі, якія самастойна у iм развіваюцца.</p>
             <br>
-            <img class="pct1" src="img/cows2.JPG" alt="r1" border="1">
+            <img class="pct1" src="../img/cows2.webp" alt="r1">
             <br><br>
-            <p class="desc lang" key="desc_cows1">Счытаецца, што малако, нагрэтае вышэй за 39'С, губляе вялікую частку сваіх карысных уласцівасцяў.    Нагрэвая, сыравары атрымліваюць пэўную кансістэнцыю і смак, але не карысць. Карысцi ў пастэрызаваных сырах няма. </p>
+            <p class="desc lang" title="desc_cows2">Счытаецца, што малако, нагрэтае вышэй за 39'С, губляе вялікую частку сваіх карысных уласцівасцяў.    Нагрэвая, сыравары атрымліваюць пэўную кансістэнцыю і смак, але не карысць. Карысцi ў пастэрызаваных сырах няма. </p>
             
             <br><br>
-            <img class="pct2" src="img/cows_1.JPG" alt="">
+            <img class="pct2" src="../img/cows_1.webp" alt="">
             <br><br>
-            <p class="desc lang" key="desc_cows1">Гатаваць сырой сыр значна дольш і працэс патрабуе велізарнай увагі і працы. Сучасная бізнес-стратэгія стварання прадуктаў гэтага не прымае. Усё робіцца хутка і максімальна эфектыўна, што не заўсёды азначае якасна.</p>
+            <p class="desc lang" title="desc_cows3">Гатаваць сырой сыр значна дольш і працэс патрабуе велізарнай увагі і працы. Сучасная бізнес-стратэгія стварання прадуктаў гэтага не прымае. Усё робіцца хутка і максімальна эфектыўна, што не заўсёды азначае якасна.</p>
             <br><br>
-            <img class="pct4" src="img/cows1.JPG" alt="">
+            <img class="pct4" src="../img/cows1.webp" alt="">
             <br><br>
-            <p class="desc lang" key="desc_cows1">Малады несалёны сыр з каравiнага малака, будучы маладым, (ад пары дзён да пары недзель), з'яўляецца выдатнай крыніцай мінералаў, яго добра есцi з медам.    Калі такі сыр вытрымаць і высушыць пару месяцаў, то ён дзейнічае як губка і выпівае шкодныя рэчывы і таксіны ў кішачніку. Яго можна есцi невялікімі кавалачкамi на працягу дня.    А смак яго непауторны!</p>
-            <button class="Button order">
-                <a class="lang" href="contacts.html" key="order">ПАПЯРЭДНЯЯ ЗАМОВА</a>
-            </button>
+            <p class="desc lang" title="desc_cows4">Малады несалёны сыр з каравiнага малака, будучы маладым, (ад пары дзён да пары недзель), з'яўляецца выдатнай крыніцай мінералаў, яго добра есцi з медам.    Калі такі сыр вытрымаць і высушыць пару месяцаў, то ён дзейнічае як губка і выпівае шкодныя рэчывы і таксіны ў кішачніку. Яго можна есцi невялікімі кавалачкамi на працягу дня.    А смак яго непауторны!</p>
+            <form style="display: inline" action="contacts.html" method="get">
+                <button class="Button order lang" title="order">ПАПЯРЭДНЯЯ ЗАМОВА</button>
+            </form>
+            
             <br><br>
         </div>
 
@@ -208,24 +213,64 @@
 
         <div class="cheese nomad phone">
             <a id="about_nomad_ph">
-                <h1 class="nomad_title lang" key="nomad_title">Сыр качэўнікаў</h1>
+                <h1 class="nomad_title lang" title="nomad_title">Сыр качэўнікаў</h1>
             </a>
             
-            <img class="pct3" src="img/nomad1.JPG" alt="">
+            <img class="pct3" src="../img/nomad1.webp" alt="">
             
            
             <br><br>
-            <p class="desc lang" key="desc_nomad1">Для вытворчасці сыра матаў папярэдне прыгатаваным шляхам натуральнага скісання тварагом шчыльна набіваецца праз шыю вычышчаная казіная шкура.</p>
+            <p class="desc lang" title="desc_nomad1">Для вытворчасці сыра матаў папярэдне прыгатаваным шляхам натуральнага скісання тварагом шчыльна набіваецца праз шыю вычышчаная казіная шкура.</p>
             <br>
-            <img class="pct1" src="img/nomad2.jpg" alt="r1" border="1">
+            <img class="pct1" src="../img/nomad2.webp" alt="r1">
             <br><br>
             
-            <p class="desc lang" key="desc_nomad2"> Адтуліна корпуса зачыняецца ваўнянай тасьмой. Затым кажух з казінай шкуры старадаўняй традыцыі качэўнікаў Ірана будзе закапаны ў зямлю на 6 месяцаў ці на год.</p>
-            <button class="Button order">
-                <a class="lang" key="order" href="contacts.html">ПАПЯРЭДНЯЯ ЗАМОВА</a>
-            </button>
+            <p class="desc lang" title="desc_nomad2"> Адтуліна корпуса зачыняецца ваўнянай тасьмой. Затым кажух з казінай шкуры старадаўняй традыцыі качэўнікаў Ірана будзе закапаны ў зямлю на 6 месяцаў ці на год.</p>
+            <form style="display: inline" action="contacts.html" method="get">
+                <button class="Button order lang" title="order">ПАПЯРЭДНЯЯ ЗАМОВА</button>
+            </form>
+            
             <br><br>
         </div>
 
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
 </body></html>
